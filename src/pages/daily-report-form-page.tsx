@@ -197,7 +197,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מס׳ נשק אישי</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           {...field}
                           placeholder="הכנס מספר נשק..."
                           dir="rtl"
@@ -217,7 +216,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מס׳ כוונות אישית</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           {...field}
                           placeholder="הכנס מספר כוונות..."
                           dir="rtl"
@@ -237,7 +235,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מס׳ אמר״ל</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           {...field}
                           placeholder="הכנס מספר אמר״ל..."
                           dir="rtl"
@@ -257,7 +254,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מס׳ משקפת</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           {...field}
                           placeholder="הכנס מספר משקפת..."
                           dir="rtl"
@@ -309,7 +305,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">אקטיק</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           type="number"
                           min="0"
                           value={field.value || ""}
@@ -338,7 +333,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מורפין</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           type="number"
                           min="0"
                           value={field.value || ""}
@@ -367,7 +361,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">מידזולם</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           type="number"
                           min="0"
                           value={field.value || ""}
@@ -396,7 +389,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">קטאמין 50 מ״ג</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           type="number"
                           min="0"
                           value={field.value || ""}
@@ -425,7 +417,6 @@ export function DailyReportFormPage() {
                       <FormLabel dir="rtl">קטאמין 10 מ״ג</FormLabel>
                       <FormControl>
                         <Input
-                          inputMode="numeric"
                           type="number"
                           min="0"
                           value={field.value || ""}
