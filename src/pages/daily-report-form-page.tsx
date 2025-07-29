@@ -73,6 +73,8 @@ export function DailyReportFormPage() {
     },
   });
 
+  const invalidSightValues = ["100075873", "277700158", "100075873"];
+
   // Check if personal number exists
   const personalNumberValue = form.watch("personalNumber");
   const isValidPersonalNumber = personalNumbers?.some(
@@ -80,6 +82,11 @@ export function DailyReportFormPage() {
   );
   const showPersonalNumberError =
     personalNumberValue && !personalNumbersLoading && !isValidPersonalNumber;
+
+  // Check if personal sights number is invalid
+  const personalSightsValue = form.watch("equipment.personalSightsNumber");
+  const isInvalidSightsNumber =
+    personalSightsValue && invalidSightValues.includes(personalSightsValue);
 
   // Submit mutation
   const submitMutation = useMutation({
@@ -223,6 +230,15 @@ export function DailyReportFormPage() {
                         />
                       </FormControl>
                       <FormMessage dir="rtl" />
+                      {isInvalidSightsNumber && (
+                        <p
+                          className="text-sm text-red-500 mt-1"
+                          dir="rtl"
+                        >
+                          המספר שהוכנס הוא מק״ט ו/או מס״ד של המתאם! נא הכנס
+                          מס״ד.
+                        </p>
+                      )}
                     </FormItem>
                   )}
                 />
